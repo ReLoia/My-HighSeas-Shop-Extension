@@ -28,8 +28,7 @@ _Use this section to include screenshots of the extension in action._
 1. **Download the Extension Files:**
     - Go to the [Releases](https://github.com/reloia/my-highseas-shop-extension/releases) section of the GitHub
       repository.
-    - Download the latest `.zip` file of the extension.
-    - Extract the contents of the `.zip` file to a folder on your local machine.
+   - Download the latest `.crx` file of the extension.
 
 2. **Open Chrome Extensions Page:**
     - In Chrome, navigate to `chrome://extensions/`.
@@ -38,8 +37,7 @@ _Use this section to include screenshots of the extension in action._
     - Toggle the "Developer mode" switch in the top right corner of the Extensions page.
 
 4. **Load the Extension:**
-    - Click the "Load unpacked" button.
-    - Select the folder containing the extracted extension files.
+   - Drag and drop the downloaded `.crx` file onto the Extensions page.
 
 5. **Confirm Installation:**
     - Once loaded, the extension icon will appear in the Chrome toolbar.
