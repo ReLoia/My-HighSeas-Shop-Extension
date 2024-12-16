@@ -17,7 +17,7 @@ popup menu, and customize your shopping experience.
 
 ### Screenshots
 
-_Use this section to include screenshots of the extension in action._
+![image](https://github.com/user-attachments/assets/45e364e2-8882-4163-8a04-35b55e2cb928)
 
 ---
 
