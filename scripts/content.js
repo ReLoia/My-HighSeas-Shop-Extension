@@ -53,6 +53,34 @@ function checkForShopPage() {
     }
 }
 
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.action === "unhideItem") {
+        const items = document.querySelector("#region-select").parentElement.querySelector(".grid").children;
+
+        Array.from(items).forEach((item) => {
+            const title = item.querySelector(".tracking-tight").textContent.trim();
+
+            if (title === message.itemTitle) {
+                item.style.display = "";
+                console.log(`Item "${title}" unhidden on the page.`);
+            }
+        });
+
+        sendResponse({ status: "success" });
+    }
+
+    if (message.action === "unhideAll") {
+        const items = document.querySelector("#region-select").parentElement.querySelector(".grid").children;
+
+        Array.from(items).forEach((item) => {
+            item.style.display = "";
+        });
+
+        console.log("All items unhidden on the page.");
+        sendResponse({ status: "success" });
+    }
+});
+
 let previousUrl = window.location.href;
 
 const observer = new MutationObserver(() => {

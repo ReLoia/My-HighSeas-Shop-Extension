@@ -1,3 +1,9 @@
+chrome.tabs.query({active:true,currentWindow:true},function(tab){
+  if (!tab[0].url || !tab[0].url.includes("https://highseas.hackclub.com/"))
+    window.open("https://highseas.hackclub.com/shop","_blank");
+});
+
+
 function loadHiddenItems() {
     chrome.storage.sync.get(["hiddenItems"], (result) => {
         const hiddenItems = result.hiddenItems || [];
@@ -34,6 +40,12 @@ function unhideItem(itemTitle) {
         const updatedItems = hiddenItems.filter((item) => item !== itemTitle);
 
         chrome.storage.sync.set({hiddenItems: updatedItems}, () => {
+            chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+                chrome.tabs.sendMessage(tabs[0].id, { action: "unhideItem", itemTitle }, (response) => {
+                    console.error(response?.status || "Failed to notify content script.");
+                });
+            });
+
             loadHiddenItems();
         });
     });
@@ -41,6 +53,12 @@ function unhideItem(itemTitle) {
 
 function unhideAllItems() {
     chrome.storage.sync.set({hiddenItems: []}, () => {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+            chrome.tabs.sendMessage(tabs[0].id, { action: "unhideAll" }, (response) => {
+                console.error(response?.status || "Failed to notify content script.");
+            });
+        });
+
         loadHiddenItems();
     });
 }

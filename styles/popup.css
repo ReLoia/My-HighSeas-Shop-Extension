@@ -12,16 +12,15 @@ body {
 
 h1 {
     font-size: 1.5em;
-    margin: 0;
-    /*text-align: center;*/
+    margin: 10px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 > button {
-    background: #39e400;
-    color: black;
+    background: #e44800;
+    color: white;
 
     border: none;
     border-radius: 7px;
@@ -34,7 +33,7 @@ h1 > button {
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 5px 0 0;
 
     max-height: 200px;
     overflow-y: auto;
@@ -49,6 +48,7 @@ ul > li {
     margin: 0 0 5px;
     padding: 0 0 0 7px;
 
+    line-height: .9;
     font-size: .9rem;
 
     display: flex;
