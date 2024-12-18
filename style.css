@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,9 +10,91 @@ body {
 
     background-color: #1e1e1e;
     color: #fff;
+
+    padding: 0 0;
+
+    & > h1 {
+        margin-top: 20px;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    & > span {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: -10px;
+    }
+
+    & > video {
+        margin-top: 30px;
+        max-width: min(94%, 800px);
+    }
+    
+    & > t {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+    }
 }
 
-h1 {
+a {
+    color: #1ad4c0;
+}
+
+div.feature {
+    width: 90%;
+    max-width: 1000px;  
+    box-sizing: border-box;
+
+    &.right {
+        display: flex;
+        text-align: end;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    & > h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    & > p {
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    & > img {
+        width: 200px;
+    }
+}
+
+divider {
     margin-top: 40px;
-    font-size: 1.6rem;
+}
+
+div.installation {
+    width: 70%;
+    max-width: 400px;
+    box-sizing: border-box;
+
+    &.right {
+        display: flex;
+        text-align: end;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    & > h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    & > p {
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    & > img {
+        width: 200px;
+    }    
 }
