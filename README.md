@@ -1,4 +1,6 @@
-# My HighSeas Shop Chrome Extension
+# My HighSeas Shop - extension
+
+## [website](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/website) - CHROME - [firefox](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/firefox)
 
 ## Overview
 
