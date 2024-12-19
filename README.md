@@ -1,6 +1,6 @@
 # My HighSeas Shop - extension
 
-## [website](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/website) - [chrome](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/chrome) - firefox
+## [website](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/website) - [chrome](https://github.com/ReLoia/My-HighSeas-Shop-Extension/tree/chrome) - FIREFOX
 
 ## Overview
 
@@ -28,22 +28,9 @@ popup menu, and customize your shopping experience.
 
 ### Firefox
 
-1. **Download the Extension Files:**
-    - Go to the [Releases](https://github.com/reloia/my-highseas-shop-extension/releases) section of the GitHub
-      repository.
-    - Download the latest `.crx` file of the extension.
-
-2. **Open Chrome Extensions Page:**
-    - In Chrome, navigate to `chrome://extensions/`.
-
-3. **Enable Developer Mode:**
-    - Toggle the "Developer mode" switch in the top right corner of the Extensions page.
-
-4. **Load the Extension:**
-    - Drag and drop the downloaded `.crx` file onto the Extensions page.
-
-5. **Confirm Installation:**
-    - Once loaded, the extension icon will appear in the Chrome toolbar.
+1. **Install the extension from the Firefox Add-ons website:**
+   - Go to the [My HighSeas Shop extension page](https://addons.mozilla.org/en-US/firefox/addon/my-highseas-shop/).
+   - Click the "Add to Firefox" button to install the extension.
 
 ---
 
@@ -62,7 +49,6 @@ popup menu, and customize your shopping experience.
 
 ### Prerequisites
 
-- Node.js (optional, for managing dependencies or tools like ESLint).
 - A code editor, such as WebStorm or VS Code.
 
 ### File Structure
@@ -76,5 +62,4 @@ popup menu, and customize your shopping experience.
 ### Steps to Modify or Extend Features
 
 1. Update `content.js` for changes to the behavior on the shop page.
-2. Modify `popup.html` and `popup.js` to enhance the popup menu.
-3. Add styles in `content.css` to adjust the visual appearance.
+2. Modify `popup.html`, `popup.js` and `popup.css` to enhance the popup menu.
